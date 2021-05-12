@@ -208,7 +208,7 @@ class _NumberPickerState extends State<NumberPicker> {
     final child = isExtra
         ? SizedBox.shrink()
         : Text(
-            _getDisplayedValue(value),
+            _getDisplayedValue(value).padLeft(2, '0'),
             style: itemStyle,
           );
 
